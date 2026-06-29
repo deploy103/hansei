@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07090d" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self'; img-src 'self' data:; font-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"
+    />
+    <title>한세 바로가기</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./hansei.webmanifest" />
+    <link rel="stylesheet" href="./hansei.css?v=20260629-1" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="./hansei.js?v=20260629-1" defer></script>
+  </head>
+  <body>
+    <main class="portal-shell">
+      <header class="portal-topbar" aria-label="한세 바로가기">
+        <a class="portal-brand" href="/" aria-label="한세 바로가기 홈">
+          <img class="brand-mark" src="./favicon.svg" alt="" aria-hidden="true" />
+          <span>
+            <strong>한세 바로가기</strong>
+            <small>한세사이버보안고등학교</small>
+          </span>
+        </a>
+        <time class="now-chip" data-now datetime="">KST</time>
+      </header>
+
+      <section class="portal-hero" aria-labelledby="portalHeading">
+        <div class="hero-copy">
+          <p class="eyebrow">HANSEI CYBER SECURITY HIGH SCHOOL</p>
+          <h1 id="portalHeading">시간표와 급식</h1>
+          <p>오늘 확인할 한세 생활 정보</p>
+        </div>
+
+        <nav class="portal-actions" aria-label="한세 빠른 이동">
+          <a class="portal-card timetable-card" href="https://time.hsoc.kr" aria-label="시간표 보러 가기">
+            <span class="card-icon" aria-hidden="true">
+              <i data-lucide="calendar-clock"></i>
+            </span>
+            <span class="card-kicker">시간표</span>
+            <strong>시간표 보러 가기</strong>
+            <span class="card-meta">time.hsoc.kr</span>
+            <span class="card-arrow" aria-hidden="true">
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </a>
+
+          <a class="portal-card meal-card" href="https://rice.mvtp.cloud" aria-label="급식 보러가기">
+            <span class="card-icon" aria-hidden="true">
+              <i data-lucide="utensils"></i>
+            </span>
+            <span class="card-kicker">급식</span>
+            <strong>급식 보러가기</strong>
+            <span class="card-meta">rice.mvtp.cloud</span>
+            <span class="card-arrow" aria-hidden="true">
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+          </a>
+        </nav>
+      </section>
+
+      <footer class="portal-footer">
+        <span>hansei.mvtp.cloud</span>
+      </footer>
+    </main>
+  </body>
+</html>

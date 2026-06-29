@@ -1,0 +1,9 @@
+.env
+.env.*
+.env_*
+server.txt
+deploy/
+requirements.txt
+요구사항.txt
+__pycache__/
+*.py[cod]
