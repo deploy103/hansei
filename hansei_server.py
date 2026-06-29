@@ -16,6 +16,7 @@ FILES = {
     "/hansei.js": ("hansei.js", "text/javascript; charset=utf-8"),
     "/hansei.webmanifest": ("hansei.webmanifest", "application/manifest+json; charset=utf-8"),
     "/favicon.svg": ("favicon.svg", "image/svg+xml"),
+    "/hansei_logo.jpg": ("hansei_logo.jpg", "image/jpeg"),
 }
 
 ROUTES = {
