@@ -1,0 +1,22 @@
+services:
+  hansei:
+    build:
+      context: .
+    restart: unless-stopped
+    environment:
+      HOST: 0.0.0.0
+      PORT: "8004"
+    expose:
+      - "8004"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8004/healthz', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+    networks:
+      - mvtp-web-net
+
+networks:
+  mvtp-web-net:
+    external: true
