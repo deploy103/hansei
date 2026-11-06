@@ -82,7 +82,7 @@ class HanseiHandler(BaseHTTPRequestHandler):
     def handle_static(self, include_body):
         request_path = self.get_request_path()
         if not request_path:
-            self.send_text(HTTPStatus.BAD_REQUEST, "Bad Request")
+            self.send_text(HTTPStatus.BAD_REQUEST, "Bad Request", include_body=include_body)
             return
 
         if request_path == "/healthz":
